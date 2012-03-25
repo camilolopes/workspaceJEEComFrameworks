@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#form.jsp" PATH="/form.jsp" SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#form.jsp:0" NAME="item" PATH="/form.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="exibirusuario::#resultado.jsp" NAME="output"
+    PATH="/resultado.jsp" TARGET="rules:#resultado.jsp"
+    TITLE="exibirusuario" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#resultado.jsp" PATH="/resultado.jsp"
+  SHAPE="240,33,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#menu.jsp" PATH="/menu.jsp" SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#menu.jsp:0" NAME="item" PATH="/menu.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="listartodos::#exibirtodos.jsp" NAME="output"
+    PATH="/exibirtodos.jsp" TARGET="rules:#exibirtodos.jsp"
+    TITLE="listartodos" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="buscareq::#buscaeq.jsp" NAME="output1"
+    PATH="/buscaeq.jsp" TARGET="rules:#buscaeq.jsp" TITLE="buscareq" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="buscalike::#buscalike.jsp" NAME="output2"
+    PATH="/buscalike.jsp" TARGET="rules:#buscalike.jsp"
+    TITLE="buscalike" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="buscaany::#buscaany.jsp" NAME="output3"
+    PATH="/buscaany.jsp" TARGET="rules:#buscaany.jsp" TITLE="buscaany" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="buscageqtde::#buscageqtde.jsp"
+    NAME="output4" PATH="/buscageqtde.jsp"
+    TARGET="rules:#buscageqtde.jsp" TITLE="buscageqtde" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="projecaosoma::#buscaprojecao.jsp"
+    NAME="output5" PATH="/buscaprojecao.jsp"
+    TARGET="rules:#buscaprojecao.jsp" TITLE="projecaosoma" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#exibirtodos.jsp" PATH="/exibirtodos.jsp"
+  SHAPE="240,33,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#exibirtodos.jsp:0" NAME="item"
+   PATH="/exibirtodos.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="ordernomeasc::#exibirtodos.jsp"
+    NAME="output" PATH="/exibirtodos.jsp"
+    TARGET="rules:#exibirtodos.jsp" TITLE="ordernomeasc" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="orderqtdedesc::#exibirtodos.jsp"
+    NAME="output1" PATH="/exibirtodos.jsp"
+    TARGET="rules:#exibirtodos.jsp" TITLE="orderqtdedesc" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#buscaeq.jsp" PATH="/buscaeq.jsp"
+  SHAPE="256,177,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#buscaeq.jsp:0" NAME="item"
+   PATH="/buscaeq.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="buscaeq::#exibirtodos.jsp" NAME="output"
+    PATH="/exibirtodos.jsp" TARGET="rules:#exibirtodos.jsp"
+    TITLE="buscaeq" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#buscalike.jsp" PATH="/buscalike.jsp"
+  SHAPE="272,321,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#buscalike.jsp:0" NAME="item"
+   PATH="/buscalike.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="buscalike::#exibirtodos.jsp" NAME="output"
+    PATH="/exibirtodos.jsp" TARGET="rules:#exibirtodos.jsp"
+    TITLE="buscalike" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#buscaany.jsp" PATH="/buscaany.jsp"
+  SHAPE="288,465,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#buscaany.jsp:0" NAME="item"
+   PATH="/buscaany.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="buscaany::#exibirtodos.jsp" NAME="output"
+    PATH="/exibirtodos.jsp" TARGET="rules:#exibirtodos.jsp"
+    TITLE="buscaany" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#buscageqtde.jsp" PATH="/buscageqtde.jsp"
+  SHAPE="304,497,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#buscageqtde.jsp:0" NAME="item"
+   PATH="/buscageqtde.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="buscageqtde::#exibirtodos.jsp" NAME="output"
+    PATH="/exibirtodos.jsp" TARGET="rules:#exibirtodos.jsp"
+    TITLE="buscageqtde" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#buscaprojecao.jsp" PATH="/buscaprojecao.jsp"
+  SHAPE="32,705,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#buscaprojecao.jsp:0" NAME="item"
+   PATH="/buscaprojecao.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="projecaosoma::#exibirprojsoma.jsp"
+    NAME="output" PATH="/exibirprojsoma.jsp"
+    TARGET="rules:#exibirprojsoma.jsp" TITLE="projecaosoma" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#exibirprojsoma.jsp"
+  PATH="/exibirprojsoma.jsp" SHAPE="32,961,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>

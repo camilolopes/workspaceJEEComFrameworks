@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#principal.jsp" PATH="/principal.jsp"
+  SHAPE="104,168,50,41" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#principal.jsp:0" NAME="item"
+   PATH="/principal.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="exibirusuarios::#exibir.jsp" NAME="output"
+    PATH="/exibir.jsp" TARGET="rules:#exibir.jsp" TITLE="exibirusuarios" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#exibir.jsp" PATH="/exibir.jsp"
+  SHAPE="344,72,50,25" model-entity="JSFProcessGroup"/>
+</PROCESS>

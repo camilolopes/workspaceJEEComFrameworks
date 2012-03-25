@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/">
+  <Resource auth="Container"  name="jdbc/login" 
+    driverClassName="com.mysql.jdbc.Driver" 
+    maxActive="20"    maxIdle="10" maxWait="-1" 
+     type="javax.sql.DataSource" 
+    url="jdbc:mysql://localhost/guiahibernate" 
+    password="integrator"
+    username="camilo"/>
+</Context>

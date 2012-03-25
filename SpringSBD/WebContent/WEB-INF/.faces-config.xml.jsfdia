@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#login.jsp" PATH="/login.jsp"
+  SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#login.jsp:0" NAME="item" PATH="/login.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="loginok::#admin#painel.jsp" NAME="output"
+    PATH="/admin/painel.jsp" TARGET="rules:#admin#painel.jsp"
+    TITLE="loginok" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="loginfalso::#login.jsp" NAME="output1"
+    PATH="/login.jsp" TARGET="rules:#login.jsp" TITLE="loginfalso" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#admin#painel.jsp" PATH="/admin/painel.jsp"
+  SHAPE="240,33,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#principal.jsp" PATH="/principal.jsp"
+  SHAPE="32,161,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#principal.jsp:0" NAME="item"
+   PATH="/principal.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="admin::#login.jsp" NAME="output"
+    PATH="/login.jsp" TARGET="rules:#login.jsp" TITLE="admin" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="cadastrarus::#formcadastro.jsp"
+    NAME="output1" PATH="/formcadastro.jsp"
+    TARGET="rules:#formcadastro.jsp" TITLE="cadastrarus" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#formcadastro.jsp" PATH="/formcadastro.jsp"
+  SHAPE="272,177,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 27/02/2010 11:24:07 by Hibernate Tools 3.2.5.Beta -->
+<hibernate-mapping>
+    <class name="br.com.bean.Universidade" table="UNIVERSIDADE" >
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="nome" type="java.lang.String">
+            <column name="NOME" />
+        </property>
+        <property name="curso" type="java.lang.String">
+            <column name="CURSO" />
+        </property>
+        <property name="profnome" type="java.lang.String">
+            <column name="PROFNOME" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03/08/2010 16:56:09 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="br.com.camilolopes.bean.UsuarioEmail" table="useremail">
+        <id name="iduser" type="int">
+            <column name="IDUSER" />
+            <generator class="assigned" />
+        </id>
+        <property name="nome" type="java.lang.String">
+            <column name="NOME" />
+        </property>
+        <property name="sobrenome" type="java.lang.String">
+            <column name="SOBRENOME" />
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="EMAIL" />
+        </property>
+    </class>
+</hibernate-mapping>

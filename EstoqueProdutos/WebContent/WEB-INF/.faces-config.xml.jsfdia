@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#cadastro.jsp" PATH="/cadastro.jsp"
+  SHAPE="32,72,50,73" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#cadastro.jsp:0" NAME="item"
+   PATH="/cadastro.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="salvar::#mostrarprodutos.jsp" NAME="output"
+    PATH="/mostrarprodutos.jsp" TARGET="rules:#mostrarprodutos.jsp"
+    TITLE="salvar" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="exibir::#mostrarprodutos.jsp" NAME="output1"
+    PATH="/mostrarprodutos.jsp" TARGET="rules:#mostrarprodutos.jsp"
+    TITLE="exibir" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="buscar::#busca.jsp" NAME="output2"
+    PATH="/busca.jsp" TARGET="rules:#busca.jsp" TITLE="buscar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#mostrarprodutos.jsp"
+  PATH="/mostrarprodutos.jsp" SHAPE="240,33,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#mostrarprodutos.jsp:0" NAME="item"
+   PATH="/mostrarprodutos.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="novo::#cadastro.jsp" NAME="output"
+    PATH="/cadastro.jsp" TARGET="rules:#cadastro.jsp" TITLE="novo" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#busca.jsp" PATH="/busca.jsp"
+  SHAPE="272,209,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#busca.jsp:0" NAME="item" PATH="/busca.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="buscar::#resultadobusca.jsp" NAME="output"
+    PATH="/resultadobusca.jsp" TARGET="rules:#resultadobusca.jsp"
+    TITLE="buscar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#resultadobusca.jsp"
+  PATH="/resultadobusca.jsp" SHAPE="480,193,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>

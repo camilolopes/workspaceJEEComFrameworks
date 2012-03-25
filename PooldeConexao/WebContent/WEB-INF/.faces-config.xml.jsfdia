@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#cadastroprod.jsp" PATH="/cadastroprod.jsp"
+  SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#cadastroprod.jsp:0" NAME="item"
+   PATH="/cadastroprod.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="salvar::#sucesso.jsp" NAME="output"
+    PATH="/sucesso.jsp" TARGET="rules:#sucesso.jsp" TITLE="salvar" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="cancelado::#cadastroprod.jsp" NAME="output1"
+    PATH="/cadastroprod.jsp" TARGET="rules:#cadastroprod.jsp"
+    TITLE="cancelado" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#sucesso.jsp" PATH="/sucesso.jsp"
+  SHAPE="240,33,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>

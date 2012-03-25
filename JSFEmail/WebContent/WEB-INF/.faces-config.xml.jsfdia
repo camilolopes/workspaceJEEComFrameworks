@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#cadastro.jsp" PATH="/cadastro.jsp"
+  SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#cadastro.jsp:0" NAME="item"
+   PATH="/cadastro.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="cadastrarusuario::#resultado.jsp"
+    NAME="output" PATH="/resultado.jsp" TARGET="rules:#resultado.jsp"
+    TITLE="cadastrarusuario" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#resultado.jsp" PATH="/resultado.jsp"
+  SHAPE="240,33,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>

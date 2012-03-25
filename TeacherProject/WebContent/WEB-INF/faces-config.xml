@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config version="1.2" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xi="http://www.w3.org/2001/XInclude"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd">
+ <managed-bean>
+  <managed-bean-name>professorcontrol</managed-bean-name>
+  <managed-bean-class>br.com.controller.ControllerProf</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+ </managed-bean>
+ <managed-bean>
+  <managed-bean-name>controlerUni</managed-bean-name>
+  <managed-bean-class>br.com.controller.ControlerUni</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+ </managed-bean>
+ <navigation-rule>
+  <from-view-id>/formprof.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>salvar</from-outcome>
+   <to-view-id>/mostrarprofs.jsp</to-view-id>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>cancelar</from-outcome>
+   <to-view-id>/menu.jsp</to-view-id>
+  </navigation-case>
+ </navigation-rule>
+ <navigation-rule>
+  <from-view-id>/menu.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>Cadastrar Professor</from-outcome>
+   <to-view-id>/formprof.jsp</to-view-id>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>exibir</from-outcome>
+   <to-view-id>/mostrarprofs.jsp</to-view-id>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>cadastrar</from-outcome>
+   <to-view-id>/formuni.jsp</to-view-id>
+  </navigation-case>
+ </navigation-rule>
+ <navigation-rule>
+  <from-view-id>/mostrarprofs.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>novo</from-outcome>
+   <to-view-id>/formprof.jsp</to-view-id>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>inicio</from-outcome>
+   <to-view-id>/menu.jsp</to-view-id>
+  </navigation-case>
+ </navigation-rule>
+ <navigation-rule>
+  <from-view-id>/formuni.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>salvaruni</from-outcome>
+   <to-view-id>/mostrarprofs.jsp</to-view-id>
+  </navigation-case>
+ </navigation-rule>
+</faces-config>

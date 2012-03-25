@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 21/06/2010 16:37:11 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="br.com.bean.Estoque" table="ESTOQUE">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="nomeProduto" type="java.lang.String">
+            <column name="NOMEPRODUTO" />
+        </property>
+        <property name="qtde" type="int">
+            <column name="QTDE" />
+        </property>
+        <property name="valorProduto" type="double">
+            <column name="VALORPRODUTO" />
+        </property>
+    </class>
+</hibernate-mapping>

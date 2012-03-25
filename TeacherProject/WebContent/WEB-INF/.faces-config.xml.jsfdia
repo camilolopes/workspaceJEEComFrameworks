@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#formprof.jsp" PATH="/formprof.jsp"
+  SHAPE="80,208,50,57" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#formprof.jsp:0" NAME="item"
+   PATH="/formprof.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="salvar::#mostrarprofs.jsp" NAME="output"
+    PATH="/mostrarprofs.jsp" TARGET="rules:#mostrarprofs.jsp"
+    TITLE="salvar" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="cancelar::#menu.jsp" NAME="output1"
+    PATH="/menu.jsp" TARGET="rules:#menu.jsp" TITLE="cancelar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#menu.jsp" PATH="/menu.jsp"
+  SHAPE="432,328,50,73" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#menu.jsp:0" NAME="item" PATH="/menu.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="Cadastrar Professor::#formprof.jsp"
+    NAME="output" PATH="/formprof.jsp" TARGET="rules:#formprof.jsp"
+    TITLE="Cadastrar Professor" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="exibir::#mostrarprofs.jsp" NAME="output1"
+    PATH="/mostrarprofs.jsp" TARGET="rules:#mostrarprofs.jsp"
+    TITLE="exibir" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="cadastrar::#formuni.jsp" NAME="output2"
+    PATH="/formuni.jsp" TARGET="rules:#formuni.jsp" TITLE="cadastrar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#mostrarprofs.jsp" PATH="/mostrarprofs.jsp"
+  SHAPE="368,120,50,57" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#mostrarprofs.jsp:0" NAME="item"
+   PATH="/mostrarprofs.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="novo::#formprof.jsp" NAME="output"
+    PATH="/formprof.jsp" TARGET="rules:#formprof.jsp" TITLE="novo" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="inicio::#menu.jsp" NAME="output1"
+    PATH="/menu.jsp" TARGET="rules:#menu.jsp" TITLE="inicio" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#formuni.jsp" PATH="/formuni.jsp"
+  SHAPE="96,400,50,41" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#formuni.jsp:0" NAME="item"
+   PATH="/formuni.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="salvaruni::#mostrarprofs.jsp" NAME="output"
+    PATH="/mostrarprofs.jsp" TARGET="rules:#mostrarprofs.jsp"
+    TITLE="salvaruni" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+</PROCESS>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#cadfuncao.jsp" PATH="/cadfuncao.jsp"
+  SHAPE="40,336,50,57" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#cadfuncao.jsp:0" NAME="item"
+   PATH="/cadfuncao.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="cancelar::#menu.jsp" NAME="output"
+    PATH="/menu.jsp" TARGET="rules:#menu.jsp" TITLE="cancelar" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="salvarfuncao::#sucessocad.jsp"
+    NAME="output1" PATH="/sucessocad.jsp" TARGET="rules:#sucessocad.jsp"
+    TITLE="salvarfuncao" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#menu.jsp" PATH="/menu.jsp"
+  SHAPE="288,152,50,73" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#menu.jsp:0" NAME="item" PATH="/menu.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="cadastrarlogin::#cadlogin.jsp" NAME="output"
+    PATH="/cadlogin.jsp" TARGET="rules:#cadlogin.jsp"
+    TITLE="cadastrarlogin" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="cadastrarfuncao::#cadfuncao.jsp"
+    NAME="output1" PATH="/cadfuncao.jsp" TARGET="rules:#cadfuncao.jsp"
+    TITLE="cadastrarfuncao" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="exibirlogin::#exibirlogin.jsp"
+    NAME="output2" PATH="/exibirlogin.jsp"
+    TARGET="rules:#exibirlogin.jsp" TITLE="exibirlogin" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#sucessocad.jsp" PATH="/sucessocad.jsp"
+  SHAPE="328,40,50,25" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#cadlogin.jsp" PATH="/cadlogin.jsp"
+  SHAPE="40,152,50,57" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#cadlogin.jsp:0" NAME="item"
+   PATH="/cadlogin.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="salvar::#sucessocad.jsp" NAME="output"
+    PATH="/sucessocad.jsp" TARGET="rules:#sucessocad.jsp" TITLE="salvar" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="cancelar::#menu.jsp" NAME="output1"
+    PATH="/menu.jsp" TARGET="rules:#menu.jsp" TITLE="cancelar" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#login.jsp" PATH="/login.jsp"
+  SHAPE="296,432,50,41" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#login.jsp:0" NAME="item" PATH="/login.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="logvalido::#menu.jsp" NAME="output"
+    PATH="/menu.jsp" TARGET="rules:#menu.jsp" TITLE="logvalido" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#exibirlogin.jsp" PATH="/exibirlogin.jsp"
+  SHAPE="680,312,50,25" model-entity="JSFProcessGroup"/>
+</PROCESS>
