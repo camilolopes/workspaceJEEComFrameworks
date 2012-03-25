@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 28/03/2010 17:44:07 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="br.com.bean.Automovel" table="AUTOMOVEL">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="nome" type="java.lang.String">
+            <column name="NOME" />
+        </property>
+        <property name="ano" type="int">
+            <column name="ANO" />
+        </property>
+        <property name="fabricantenome" type="java.lang.String">
+            <column name="FABRICANTENOME" />
+        </property>
+    </class>
+</hibernate-mapping>
